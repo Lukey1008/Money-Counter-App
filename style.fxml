@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="316.0" prefWidth="230.0" style="-fx-background-color: #41C8DA;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moneycounter.Controller">
+   <children>
+      <Label alignment="CENTER" layoutX="4.0" prefHeight="50.0" prefWidth="221.0" text="Money Counter">
+         <font>
+            <Font name="Elephant" size="26.0" />
+         </font>
+      </Label>
+      <Line endX="127.99998474121094" endY="1.1444091796875E-5" layoutX="102.0" layoutY="50.0" startX="-100.0" stroke="#197883" strokeWidth="2.0" style="-fx-fill: #197883;" />
+      <VBox layoutX="14.0" layoutY="58.0" prefHeight="97.0" prefWidth="52.0" spacing="10.0">
+         <children>
+            <Button fx:id="onePenceButton" mnemonicParsing="false" onAction="#addOnePence" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC; -fx-border-width: 10;" text="1p">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="fivePenceButton" focusTraversable="false" mnemonicParsing="false" onAction="#addFivePence" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="5p">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="twentyPenceButton" focusTraversable="false" mnemonicParsing="false" onAction="#addTwentyPence" style="-fx-background-color: #219CAC;" text="20p">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="58.0" layoutY="58.0" prefHeight="97.0" prefWidth="36.0" spacing="10.0">
+         <children>
+            <Button fx:id="twoPenceButton" focusTraversable="false" mnemonicParsing="false" onAction="#addTwoPence" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="2p">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tenPenceButton" focusTraversable="false" mnemonicParsing="false" onAction="#addTenPence" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="10p">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="fiftyPenceButton" focusTraversable="false" mnemonicParsing="false" onAction="#addFiftyPence" style="-fx-background-color: #219CAC;" text="50p">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="136.0" layoutY="58.0" prefHeight="97.0" prefWidth="36.0" spacing="10.0">
+         <children>
+            <Button fx:id="onePoundButton" focusTraversable="false" mnemonicParsing="false" onAction="#addOnePound" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="£1">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="fivePoundButton" focusTraversable="false" mnemonicParsing="false" onAction="#addFivePound" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="£5">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="twentyPoundButton" focusTraversable="false" mnemonicParsing="false" onAction="#addTwentyPound" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="£20">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="180.0" layoutY="58.0" prefHeight="97.0" prefWidth="36.0" spacing="10.0">
+         <children>
+            <Button fx:id="twoPoundButton" focusTraversable="false" mnemonicParsing="false" onAction="#addTwoPound" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="£2">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="tenPoundButton" focusTraversable="false" mnemonicParsing="false" onAction="#addTenPound" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="£10">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="fiftyPoundButton" focusTraversable="false" mnemonicParsing="false" onAction="#addFiftyPound" prefHeight="25.0" prefWidth="36.0" style="-fx-background-color: #219CAC;" text="£50">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="resetButton" focusTraversable="false" layoutX="12.0" layoutY="199.0" mnemonicParsing="false" onAction="#reset" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #219CAC;" text="Reset">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="moneyLabel" alignment="CENTER" focusTraversable="false" layoutX="23.0" layoutY="231.0" prefHeight="17.0" prefWidth="185.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="263.0" prefHeight="50.0" prefWidth="93.0" text="Total: ">
+         <font>
+            <Font name="Calisto MT" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalText" layoutX="82.0" layoutY="270.0" prefHeight="36.0" prefWidth="144.0" style="-fx-background-color: white;" textAlignment="CENTER">
+         <font>
+            <Font name="Calisto MT" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="closeButton1" focusTraversable="false" layoutX="12.0" layoutY="167.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="206.0" style="-fx-background-color: #219CAC;" text="Close">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Line endX="129.00003051757812" endY="1.52587890625E-5" layoutX="101.0" layoutY="163.0" startX="-100.0" stroke="#197883" strokeWidth="2.0" />
+      <Line endX="127.99998474121094" endY="1.52587890625E-5" layoutX="102.0" layoutY="230.0" startX="-100.0" stroke="#197883" strokeWidth="2.0" />
+   </children>
+</AnchorPane>
